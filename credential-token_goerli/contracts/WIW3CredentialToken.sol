@@ -60,10 +60,10 @@ contract WIW3CredentialToken is ERC721, ERC721URIStorage, Ownable {
 
 	// Upon contract creation, set all Token URIs
 	constructor() ERC721("WOMEN IN WEB3 Credential Tokens", "CT") {
-		base = "https://womeninweb3.infura-ipfs.io/ipfs/QmWNd3c4cD4BngaxV3xHbZM6ewTz1Mh8V3BAfdUXtCECqP";
-		learn = "https://womeninweb3.infura-ipfs.io/ipfs/QmdcVTYPtB3vPjWoVvsdRte4EAAFW3zApBK4pugaAMeyi7";
-		prototype = "https://womeninweb3.infura-ipfs.io/ipfs/QmU5acPa8M4SG2r4t8X9Uz6eBovpiUf3tiR63Uv4SnmF7o";
-		venture = "https://womeninweb3.infura-ipfs.io/ipfs/QmXzLByLGqXH528r5iWxqEf8EZuY6Y6m1NMWLRhh6BLH2G";
+		base = "https://ipfs.io/ipfs/QmVk3LQxKt8kpJNn8XKaa6DUQ7ztHmvHXusuJuypqVSV5W?filename=base.json" ;
+        learn = "https://ipfs.io/ipfs/QmXuBH1sBZobCbk7aenKv7dowbQi4Z8C1vCrLHgm2Jt7HL?filename=learn.json";
+        prototype = "https://ipfs.io/ipfs/Qmai2qmzqHGzuS5sYfYca5v5uPSBp6sAMm839Wt5tki7j4?filename=prototype.json";
+        venture = "https://ipfs.io/ipfs/QmTkjbbmrHz4AhGaPky9HcJYE6L5g5YwDESCUy3tV3eRr5?filename=venture.json";
 	}
 
 	/* 💡 Smart Contract Events:
