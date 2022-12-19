@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   },
   "author": "",
   "license": "ISC",
@@ -15,7 +18,12 @@
     "prettier-plugin-solidity": "^1.0.0"
   },
   "dependencies": {
+    "@magic-sdk/admin": "^1.8.0",
     "@openzeppelin/contracts": "^4.8.0",
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "magic-sdk": "^10.1.0",
+    "next": "latest",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   }
 }
