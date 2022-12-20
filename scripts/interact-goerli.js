@@ -1,6 +1,6 @@
 const ALCHEMY_GOERLI_API_KEY = process.env.ALCHEMY_GOERLI_API_KEY;
 const CRYPTO_WALLET_PRIVATE_KEY = process.env.CRYPTO_WALLET_PRIVATE_KEY;
-const GOERLI_CONTRACT_ADDRESS = process.env.GOERLI_CONTRACT_ADDRESS;
+const GOERLI_CONTRACT_ADDRESS = process.env.NEXT_PUBLIC_GOERLI_CONTRACT_ADDRESS;
 
 // For Hardhat
 const contract = require("../artifacts/contracts/WIW3CredentialToken.sol/WIW3CredentialToken.json");
