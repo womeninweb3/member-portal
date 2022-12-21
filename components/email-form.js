@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailFormStyles from "../pages/styles/components/email-form.js"
 
 const EmailForm = ({ onEmailSubmit, disabled }) => {
   const [email, setEmail] = useState("");
@@ -23,22 +24,9 @@ const EmailForm = ({ onEmailSubmit, disabled }) => {
         </button>
       </form>
 
-      <style jsx>{`
-        form,
-        label {
-          display: flex;
-          flex-flow: column;
-          text-align: center;
-        }
-        .form-header {
-          font-size: 22px;
-          margin: 25px 0;
-        }
-        .input-wrapper {
-          width: 80%;
-          margin: 0 auto 20px;
-        }
-      `}</style>
+      <style jsx>
+        {emailFormStyles}
+      </style>
     </>
   );
 };

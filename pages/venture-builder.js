@@ -3,6 +3,11 @@ import { UserContext } from "../lib/UserContext";
 import Loading from "../components/loading";
 import Link from "next/link";
 
+// Styles
+import indexStyles from "./styles/pages/index.module.css"
+import vbStyles from "./styles/pages/venture-builder.module.css"
+import { Button } from "@material-tailwind/react"
+
 // Initialize the Magic x Ethers Provider
 import { Magic } from "magic-sdk";
 import { ethers } from "ethers";
@@ -58,16 +63,21 @@ const VentureBuilder = () => {
         ) : (
           user?.issuer && (
             <div>
-              <h1>Venture Builder</h1>
-              <h2>
-                <Link href="/learn">Level 1: Learn</Link>
-              </h2>
-              <h2>
-                <Link href="/prototype">Level 2: Prototype</Link>
-              </h2>
-              <h2>
-                <Link href="/venture">Level 3: Venture</Link>
-              </h2>
+              <div className={indexStyles.tabcontainer}>
+                <Link href="/learn">
+                  <Button className={indexStyles.Button}>Level 1: Learn</Button>
+                </Link>
+                <Link href="/prototype">
+                  <Button className={indexStyles.Button}>Level 2: Prototype</Button>
+                </Link>
+                <Link href="/venture">
+                  <Button className={indexStyles.Button}>Level 3: Venture</Button>
+                </Link>
+              </div>
+              <div className={indexStyles.container}>
+                <h1 className={vbStyles.h1}>Venture Builder </h1>
+                <Link href="/">Back to Home</Link>
+              </div>
             </div>
           )
         )}

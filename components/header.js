@@ -3,6 +3,10 @@ import Link from "next/link";
 import Router from "next/router";
 import { UserContext } from "../lib/UserContext";
 
+// Styles
+import headerStyles from "../pages/styles/components/header.js"
+import { Button } from "@material-tailwind/react"
+
 // Initialize the Magic x Ethers Provider
 import { Magic } from "magic-sdk";
 import { ethers } from "ethers";
@@ -49,14 +53,18 @@ const Header = () => {
           ) : user?.issuer ? (
             <>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/">
+                  <Button className="header-button">Home</Button>
+                </Link>
               </li>
               <li>
-                <Link href="/profile">Profile</Link>
+                <Link href="/profile">
+                  <Button className="header-button">Profile</Button>
+                </Link>
               </li>
               <li>
                 <a onClick={logout} className="button">
-                  Logout
+                  <Button className="header-button">Logout</Button>
                 </a>
               </li>
             </>
@@ -67,31 +75,9 @@ const Header = () => {
           )}
         </ul>
       </nav>
-      <style jsx>{`
-        nav {
-          max-width: 45rem;
-          margin: 0 auto 50px;
-          padding: 1.25rem 1.25rem;
-          border-bottom: 1px solid #f0f0f0;
-        }
-        ul {
-          display: flex;
-          list-style: none;
-        }
-        li {
-          margin-right: 1.5rem;
-          line-height: 38px;
-        }
-        li:first-child {
-          margin-left: auto;
-        }
-        .button {
-          background: none !important;
-          border: none;
-          text-decoration: underline;
-          cursor: pointer;
-        }
-      `}</style>
+      <style jsx>
+        {headerStyles}
+      </style>
     </header>
   );
 };

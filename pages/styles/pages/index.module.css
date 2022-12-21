@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+    border: solid white;
+    height: 40rem;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.tabcontainer {
+    border: none;
+    max-width: 70rem;
+    max-height: 5rem;
+    margin: 0 auto;
+}
+
+.Button {
+    background-color: #000000; 
+    border: solid white;
+    border-bottom-color: #000000;; 
+    border-top-color: white;  
+    border-left-color: white;   
+    border-right-color: white; 
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 2%;
+}
+
+.h1 {
+    color: white;
+}

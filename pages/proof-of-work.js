@@ -3,6 +3,11 @@ import { UserContext } from "../lib/UserContext";
 import Loading from "../components/loading";
 import Link from "next/link";
 
+// Styles
+import indexStyles from "./styles/pages/index.module.css"
+import powStyles from "./styles/pages/proof-of-work.module.css"
+import { Button } from "@material-tailwind/react";
+
 // Initialize the Magic x Ethers Provider
 import { Magic } from "magic-sdk";
 import { ethers } from "ethers";
@@ -58,8 +63,18 @@ const ProofOfWork = () => {
         ) : (
           user?.issuer && (
             <div>
-              <h1>Proof of Work</h1>
-              <Link href="/">Back to Home</Link>
+              <div className={indexStyles.tabcontainer}>
+                <Link href="/venture-builder">
+                  <Button className={indexStyles.Button}>Venture Builder</Button>
+                </Link>
+                <Link href="/proof-of-work">
+                  <Button className={indexStyles.Button}>Proof of Work</Button>
+                </Link>
+              </div>
+              <div className={indexStyles.container}>
+                <h1 className={powStyles.h1}>Proof of Work</h1>
+                <Link href="/">Back to Home</Link>
+              </div>
             </div>
           )
         )}

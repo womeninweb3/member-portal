@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Header from "./header";
+import layoutStyles from "../pages/styles/components/layout.js"
 
 const Layout = (props) => (
   <>
@@ -12,17 +13,9 @@ const Layout = (props) => (
     <main>
       <div className="container">{props.children}</div>
     </main>
-    <style jsx global>{`
-      * {
-        font-family: sans-serif !important;
-        outline: none;
-      }
-      .container {
-        max-width: 42rem;
-        margin: 0 auto;
-        padding: 0 10px;
-      }
-    `}</style>
+    <style jsx global>
+      {layoutStyles}
+    </style>
   </>
 );
 
