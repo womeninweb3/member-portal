@@ -22,6 +22,7 @@
     "@magic-sdk/admin": "^1.8.0",
     "@material-tailwind/react": "^1.2.4",
     "@openzeppelin/contracts": "^4.8.0",
+    "airtable": "^0.11.6",
     "dotenv": "^16.0.3",
     "magic-sdk": "^10.1.0",
     "next": "latest",
