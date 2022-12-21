@@ -4,6 +4,8 @@ import { UserContext } from "../lib/UserContext";
 import EmailForm from "../components/email-form";
 // Initialize the Magic x Ethers Provider
 import { Magic } from "magic-sdk";
+import { getUser } from "../lib/getUser";
+import { createUser } from "../lib/createUser";
 
 const Login = () => {
   const [disabled, setDisabled] = useState(false);
@@ -15,6 +17,10 @@ const Login = () => {
   }, [user]);
 
   if (typeof window !== "undefined") {
+    // Testing Airtable
+    getUser();
+    createUser();
+
     const polygonNodeOptions = {
       rpcUrl: "https://rpc-mumbai.maticvigil.com/", // Polygon RPC URL
       chainId: 80001, // Polygon chain ID
