@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.title {
+    background-color: #212121;
+    font-size: 20px;
+    color: white;
+    margin: 30px 0 5px;
+    margin-left: 8%;
+}
+
+.label {
+    background-color: #212121;
+    font-size: 16px;
+    color: white;
+    margin: 15px 0 5px;
+    margin-left: 8%;
+}
+
+.warningLabel {
+    background-color: #212121;
+    font-size: 16px;
+    color: red;
+    margin: 15px 0 5px;
+    margin-left: 8%;
+}
+
+.profile-info {
+    color: white;
+    font-size: 17px;
+    word-wrap: break-word;
+    margin-left: 8%;
+}
+
+.input {
+    background-color: #212121;
+    font-size: 12px;
+    background: white;
+    margin: 15px 0 5px;
+    margin-left: 8%;
+    border: solid black;
+    color: black;
+    padding: 5px 50px;
+    margin-right: 2%;
+}
+
+.submitInput {
+    font-size: 14px;
+    margin: 10px 0 5px;
+    margin-left: 8%;
+    background-color: #e0e0e0; 
+    border: solid black;
+    color: black;
+    padding: 10px 20px;
+}
+
+.mainWrapper { 
+    background-color: #212121;
+    display: grid; 
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.innerWrapper { 
+    border-left: solid white;
+    height: 40rem;
+    max-width: 70rem;
+    background-color: #212121;
+    border-left-color: white; 
+}
+
+.innerBg { 
+    background-color: #212121;
+}
+
+.colGrid {
+    background-color: #212121;
+    display: grid;
+}
+
+.hr { 
+    display: block;
+    margin-end: auto;
+    margin-start: auto;
+    border: 1px inset;
+}
